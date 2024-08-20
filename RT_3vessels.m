@@ -1,3 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Function: - Example code to simulate a fractionated RT treatment protocol 
+%           and plot the numerical solution
+%           - Assume that the file in location 'file_path' contains the
+%           parameters values that define the tumours of interest and the 
+%           corresponding optimal domain length, i.e., 
+%           the oxygen consumption rates, q1 and q3, the vascular volume,
+%           V0, and optimal domain length L.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% Applying a fractionated RT schedule
 % 1D model with 1 vessel inside the domain, 2 at the boundaries and Neumann
 % BCs for c
@@ -5,7 +15,7 @@ clear all, clc, close all, format compact
 
 %% PDE model
 % Import tumour information
-tumours = readtable('parameters_1vessel_flux.csv');
+tumours = readtable('file_path');
 q1 = tumours.q_1;
 q3 = tumours.q_3;
 L_values = tumours.optL;
