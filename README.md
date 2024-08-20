@@ -1,2 +1,2 @@
 # PDEModelTumourResponsesRT
-Investigating responses to radiotherapy of the PDE model distinguishing between two tumour growth arrest mechanisms
+This repository contains the MATLAB code used simulate tumour responses to radiotherapy with the PDE model distinguishing between two tumour growth arrest mechanisms developped in the MMSC dissertation "Spatial Effects on the Impact of Growth Arrest Mechanisms on Tumour Growth and Responses to Radiotherapy". We take a domain with two blood vessels at the boundaries and one at the centre, and Neumann boundary conditions for the oxygen concentration. We also include a spreadsheet that contains the optimal domain length L, maximum and mean squared errors for the different parameter combinations considered in the dissertation.
